@@ -17,7 +17,8 @@ export const Wrapper = styled.div`
 export const BackgroundWrapper = styled.div`
   width: 100%;
   height: 100%;
-  background: url(${loginBackground});
+  // background: url(${loginBackground});
+  background-color: #eaeaea;
   background-size: cover;
   position: relative;
 `;

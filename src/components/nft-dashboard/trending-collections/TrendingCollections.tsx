@@ -40,7 +40,7 @@ export const TrendingCollections: React.FC = () => {
 
   return (
     <>
-      <NFTCardHeader title={t('nft.trendingCollections')}>
+      {/* <NFTCardHeader title={t('nft.trendingCollections')}>
         {isTabletOrHigher && (
           <BaseRow align="middle">
             <BaseCol>
@@ -60,7 +60,7 @@ export const TrendingCollections: React.FC = () => {
             </BaseCol>
           </BaseRow>
         )}
-      </NFTCardHeader>
+      </NFTCardHeader> */}
 
       <S.SectionWrapper>
         {mobileOnly && trendingList.mobile}

@@ -26,6 +26,7 @@ const AddModal: React.FC<AddModalProps> = ({ visible, onCancel }) => {
         count: values?.count,
         payload: values?.payload,
         sid: socket.current.id,
+        address: values?.address,
       });
       notification.success({ message: `Gửi yêu cầu đặt xe thành công!` });
       console.log('data', data);
@@ -59,13 +60,15 @@ const AddModal: React.FC<AddModalProps> = ({ visible, onCancel }) => {
         >
           <DatePicker defaultValue={moment()} style={{ width: '100%', height: '35px' }} />
         </Form.Item>
-
+        <Form.Item name="address" label="Địa chỉ" rules={[{ required: true, message: 'Số xe là bắt buộc' }]}>
+          <Input style={{ width: '100%', height: '35px' }} />
+        </Form.Item>
         <Form.Item name="count" label="Số xe" rules={[{ required: true, message: 'Số xe là bắt buộc' }]}>
-          <InputNumber style={{ width: '100%', height: '35px' }} />
+          <Input style={{ width: '100%', height: '35px' }} />
         </Form.Item>
 
         <Form.Item name="payload" label="Tải trọng" rules={[{ required: true, message: 'Tải trọng là bắt buộc' }]}>
-          <InputNumber style={{ width: '100%', height: '35px' }} />
+          <Input style={{ width: '100%', height: '35px' }} />
         </Form.Item>
       </Form>
     </Modal>

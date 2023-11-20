@@ -21,11 +21,11 @@ export const RecentActivityHeader: React.FC<RecentActivityHeaderProps> = ({ filt
 
   return (
     <>
-      <NFTCardHeader title={t('nft.recentActivity')}>
+      {/* <NFTCardHeader title={t('nft.recentActivity')}>
         {!isDesktop && (
           <BaseButton size="large" noStyle type="text" icon={<FilterIcon />} onClick={() => setModalOpen(true)} />
         )}
-      </NFTCardHeader>
+      </NFTCardHeader> */}
 
       {!isDesktop && (
         <BaseModal open={isModalOpen} onCancel={() => setModalOpen(false)} footer={null}>

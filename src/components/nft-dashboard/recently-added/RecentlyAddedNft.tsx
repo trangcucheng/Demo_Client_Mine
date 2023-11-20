@@ -41,7 +41,7 @@ export const RecentlyAddedNft: React.FC = () => {
 
   return (
     <>
-      <NFTCardHeader title={t('nft.recentlyAddedNFTs')}>
+      {/* <NFTCardHeader title={t('nft.recentlyAddedNFTs')}>
         {isTablet && (
           <BaseRow align="middle">
             <BaseCol>
@@ -61,7 +61,7 @@ export const RecentlyAddedNft: React.FC = () => {
             </BaseCol>
           </BaseRow>
         )}
-      </NFTCardHeader>
+      </NFTCardHeader> */}
 
       <S.SectionWrapper>
         {mobileOnly && cards.mobile}

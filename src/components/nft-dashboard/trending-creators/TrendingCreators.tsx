@@ -30,7 +30,7 @@ export const TrendingCreators: React.FC = () => {
 
   return (
     <>
-      <NFTCardHeader title={t('nft.trendingCreators')}>
+      {/* <NFTCardHeader title={t('nft.trendingCreators')}>
         <BaseRow align="middle">
           <BaseCol>
             <ViewAll bordered={false} />
@@ -52,7 +52,7 @@ export const TrendingCreators: React.FC = () => {
             </>
           )}
         </BaseRow>
-      </NFTCardHeader>
+      </NFTCardHeader> */}
 
       {stories.length > 0 && (
         <BaseCarousel
