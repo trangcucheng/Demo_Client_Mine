@@ -8,7 +8,7 @@ import { BaseLayout } from '@app/components/common/BaseLayout/BaseLayout';
 export const Sider = styled(BaseLayout.Sider)`
   position: fixed;
   overflow: visible;
-  right: 0;
+  left: 0;
   z-index: 5;
   min-height: 100vh;
   max-height: 100vh;

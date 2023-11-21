@@ -7,10 +7,10 @@ export interface Tag {
 
 export interface BasicTableRow {
   key: number;
-  create_at: string;
-  count: number;
+  start_use: string;
+  regist_state: number;
   payload: number;
-  address: string;
+  status: string;
   tags?: Tag[];
 }
 
@@ -44,137 +44,127 @@ export const getBasicTableData = (pagination: Pagination): Promise<BasicTableDat
         data: [
           {
             key: 1,
-            create_at: '18/11/2023',
-            count: 3,
+            start_use: '18/11/2023',
+            regist_state: 3,
             payload: 5,
-            address: 'New York No. 1 Lake Park',
-            tags: [{ value: 'Đang chờ xử lý', priority: Priority.INFO }],
+            status: 'Đang chờ',
           },
           {
             key: 2,
-            create_at: '18/11/2023',
-            count: 3,
+            start_use: '18/11/2023',
+            regist_state: 3,
             payload: 5,
-            address: 'London No. 1 Lake Park',
-            tags: [{ value: 'Bị hủy', priority: Priority.HIGH }],
+            status: 'Đang chờ',
           },
           {
             key: 3,
-            create_at: '18/11/2023',
-            count: 3,
+            start_use: '18/11/2023',
+            regist_state: 3,
             payload: 5,
-            address: 'Sidney No. 1 Lake Park',
-            tags: [{ value: 'Đang chờ xử lý', priority: Priority.INFO }],
+            status: 'Đang vận chuyển',
           },
           {
             key: 4,
-            create_at: '18/11/2023',
-            count: 3,
+            start_use: '18/11/2023',
+            regist_state: 3,
             payload: 5,
-            address: 'New York No. 1 Lake Park',
-            tags: [{ value: 'Đang xử lý', priority: Priority.MEDIUM }],
+            status: 'Đang vận chuyển',
           },
           {
             key: 5,
-            create_at: '18/11/2023',
-            count: 3,
+            start_use: '18/11/2023',
+            regist_state: 3,
             payload: 5,
-            address: 'Minsk',
-            tags: [{ value: 'Đang xử lý', priority: Priority.MEDIUM }],
+            status: 'Đang chờ',
           },
           {
             key: 6,
-            create_at: '18/11/2023',
-            count: 3,
+            start_use: '18/11/2023',
+            regist_state: 3,
             payload: 5,
-            address: 'New York No. 1 Lake Park',
-            tags: [{ value: 'Đang chờ xử lý', priority: Priority.INFO }],
+            status: 'Đang chờ',
           },
           {
             key: 7,
-            create_at: '18/11/2023',
-            count: 3,
+            start_use: '18/11/2023',
+            regist_state: 3,
             payload: 5,
-            address: 'Sidney No. 1 Lake Park',
-            tags: [{ value: 'Chưa được phê duyệt', priority: Priority.LOW }],
+            status: 'Đang vận chuyển',
           },
           {
             key: 8,
-            create_at: '18/11/2023',
-            count: 3,
+            start_use: '18/11/2023',
+            regist_state: 3,
             payload: 5,
-            address: 'New York No. 1 Lake Park',
+            status: 'Đang vận chuyển',
           },
           {
             key: 9,
-            create_at: '18/11/2023',
-            count: 3,
+            start_use: '18/11/2023',
+            regist_state: 3,
             payload: 5,
-            address: 'Minsk',
-            tags: [{ value: 'Chưa được phê duyệt', priority: Priority.LOW }],
+            status: 'Đang vận chuyển',
           },
           {
             key: 10,
-            create_at: '18/11/2023',
-            count: 3,
+            start_use: '18/11/2023',
+            regist_state: 3,
             payload: 5,
-            address: 'London',
-            tags: [{ value: 'Engineer', priority: Priority.MEDIUM }],
+            status: 'Đang vận chuyển',
           },
           {
             key: 11,
-            create_at: '18/11/2023',
-            count: 3,
+            start_use: '18/11/2023',
+            regist_state: 3,
             payload: 5,
-            address: 'Minsk',
-            tags: [{ value: 'Chưa được phê duyệt', priority: Priority.LOW }],
+            status: 'Đang sửa chữa',
           },
           {
             key: 12,
-            create_at: '18/11/2023',
-            count: 3,
+            start_use: '18/11/2023',
+            regist_state: 3,
             payload: 5,
-            address: 'Brest',
+            status: 'Brest',
             tags: [{ value: 'Chưa được phê duyệt', priority: Priority.LOW }],
           },
           {
             key: 13,
-            create_at: '18/11/2023',
-            count: 3,
+            start_use: '18/11/2023',
+            regist_state: 3,
             payload: 5,
-            address: 'Minsk',
+            status: 'Minsk',
             tags: [{ value: 'Chưa được phê duyệt', priority: Priority.LOW }],
           },
           {
             key: 14,
-            create_at: '18/11/2023',
-            count: 3,
+            start_use: '18/11/2023',
+            regist_state: 3,
             payload: 5,
-            address: 'New York',
+            status: 'New York',
             tags: [{ value: 'Chưa được phê duyệt', priority: Priority.LOW }],
           },
           {
             key: 15,
-            create_at: '18/11/2023',
-            count: 3,
+            start_use: '18/11/2023',
+            regist_state: 3,
             payload: 5,
-            address: 'London',
+            status: 'London',
             tags: [{ value: 'Chưa được phê duyệt', priority: Priority.LOW }],
           },
           {
             key: 16,
-            create_at: '18/11/2023',
-            count: 3,
+            start_use: '18/11/2023',
+            regist_state: 3,
             payload: 5,
-            address: 'Minsk',
+            status: 'Minsk',
             tags: [{ value: 'Doctor', priority: Priority.HIGH }],
           },
           {
             key: 17,
-            create_at: '18/11/2023',
-            count: 3,
+            start_use: '18/11/2023',
+            regist_state: 3,
             payload: 5,
-            address: 'Gomel',
+            status: 'Gomel',
             tags: [
               { value: 'Engineer', priority: Priority.MEDIUM },
               { value: 'Teacher', priority: Priority.INFO },
@@ -182,10 +172,10 @@ export const getBasicTableData = (pagination: Pagination): Promise<BasicTableDat
           },
           {
             key: 18,
-            create_at: '18/11/2023',
-            count: 3,
+            start_use: '18/11/2023',
+            regist_state: 3,
             payload: 5,
-            address: 'Moscow',
+            status: 'Moscow',
             tags: [
               { value: 'Professor', priority: Priority.LOW },
               { value: 'Doctor', priority: Priority.HIGH },
@@ -193,10 +183,10 @@ export const getBasicTableData = (pagination: Pagination): Promise<BasicTableDat
           },
           {
             key: 19,
-            create_at: '18/11/2023',
-            count: 3,
+            start_use: '18/11/2023',
+            regist_state: 3,
             payload: 5,
-            address: 'London',
+            status: 'London',
             tags: [
               { value: 'Teacher', priority: Priority.INFO },
               { value: 'Doctor', priority: Priority.HIGH },
@@ -204,10 +194,10 @@ export const getBasicTableData = (pagination: Pagination): Promise<BasicTableDat
           },
           {
             key: 20,
-            create_at: '18/11/2023',
-            count: 3,
+            start_use: '18/11/2023',
+            regist_state: 3,
             payload: 5,
-            address: 'Bronx',
+            status: 'Bronx',
             tags: [{ value: 'Professor', priority: Priority.LOW }],
           },
         ],
@@ -222,258 +212,258 @@ export const getTreeTableData = (pagination: Pagination): Promise<TreeTableData>
     setTimeout(() => {
       res({
         data: [
-          {
-            key: 1,
-            name: 'John Brown sr.',
-            age: 60,
-            address: 'New York No. 1 Lake Park',
-            children: [
-              {
-                key: 11,
-                name: 'John Brown',
-                age: 42,
-                address: 'New York No. 2 Lake Park',
-              },
-              {
-                key: 12,
-                name: 'John Brown jr.',
-                age: 30,
-                address: 'New York No. 3 Lake Park',
-                children: [
-                  {
-                    key: 121,
-                    name: 'Jimmy Brown',
-                    age: 16,
-                    address: 'New York No. 3 Lake Park',
-                  },
-                ],
-              },
-              {
-                key: 13,
-                name: 'Jim Green sr.',
-                age: 72,
-                address: 'London No. 1 Lake Park',
-                children: [
-                  {
-                    key: 131,
-                    name: 'Jim Green',
-                    age: 42,
-                    address: 'London No. 2 Lake Park',
-                    children: [
-                      {
-                        key: 1311,
-                        name: 'Jim Green jr.',
-                        age: 25,
-                        address: 'London No. 3 Lake Park',
-                      },
-                      {
-                        key: 1312,
-                        name: 'Jimmy Green sr.',
-                        age: 18,
-                        address: 'London No. 4 Lake Park',
-                      },
-                    ],
-                  },
-                ],
-              },
-            ],
-          },
-          {
-            key: 200,
-            name: 'Joe Black',
-            age: 32,
-            address: 'Sidney No. 1 Lake Park',
-            children: [
-              {
-                key: 201,
-                name: 'Joe Green',
-                age: 42,
-                address: 'London No. 2 Lake Park',
-                children: [
-                  {
-                    key: 202,
-                    name: 'Joe Green jr.',
-                    age: 25,
-                    address: 'London No. 3 Lake Park',
-                  },
-                  {
-                    key: 203,
-                    name: 'Joe Green sr.',
-                    age: 18,
-                    address: 'London No. 4 Lake Park',
-                  },
-                ],
-              },
-            ],
-          },
-          {
-            key: 300,
-            name: 'Jaime Black',
-            age: 22,
-            address: 'Sidney No. 1 Lake Park',
-            children: [
-              {
-                key: 301,
-                name: 'Jaime Green',
-                age: 52,
-                address: 'London No. 2 Lake Park',
-                children: [
-                  {
-                    key: 302,
-                    name: 'Jaime Green jr.',
-                    age: 21,
-                    address: 'London No. 3 Lake Park',
-                  },
-                  {
-                    key: 303,
-                    name: 'Jaime Green sr.',
-                    age: 18,
-                    address: 'London No. 4 Lake Park',
-                  },
-                ],
-              },
-            ],
-          },
-          {
-            key: 400,
-            name: 'Pavel Brown',
-            age: 26,
-            address: 'London No. 2 Lake Park',
-            children: [
-              {
-                key: 401,
-                name: 'Pavel Brown',
-                age: 22,
-                address: 'London No. 2 Lake Park',
-                children: [
-                  {
-                    key: 402,
-                    name: 'Pavel Brown jr.',
-                    age: 24,
-                    address: 'London No. 1 Lake Park',
-                  },
-                  {
-                    key: 403,
-                    name: 'Pavel Brown sr.',
-                    age: 19,
-                    address: 'London No. 4 Lake Park',
-                  },
-                ],
-              },
-            ],
-          },
-          {
-            key: 500,
-            name: 'Alex Nickls',
-            age: 45,
-            address: 'London No. 2 Lake Park',
-            children: [
-              {
-                key: 501,
-                name: 'Marta Nickls',
-                age: 25,
-                address: 'London No. 2 Lake Park',
-                children: [
-                  {
-                    key: 502,
-                    name: 'Pavel Nickls jr.',
-                    age: 12,
-                    address: 'London No. 1 Lake Park',
-                  },
-                  {
-                    key: 503,
-                    name: 'Alina Nickls sr.',
-                    age: 19,
-                    address: 'London No. 4 Lake Park',
-                  },
-                ],
-              },
-            ],
-          },
-          {
-            key: 600,
-            name: 'Nick Donald',
-            age: 45,
-            address: 'London No. 2 Lake Park',
-            children: [
-              {
-                key: 601,
-                name: 'Alexsa Donald',
-                age: 34,
-                address: 'London No. 2 Lake Park',
-                children: [
-                  {
-                    key: 602,
-                    name: 'Marta Donald jr.',
-                    age: 24,
-                    address: 'London No. 1 Lake Park',
-                  },
-                  {
-                    key: 603,
-                    name: 'Alex Donald sr.',
-                    age: 19,
-                    address: 'London No. 4 Lake Park',
-                  },
-                ],
-              },
-            ],
-          },
-          {
-            key: 700,
-            name: 'Jo Snider',
-            age: 26,
-            address: 'London No. 2 Lake Park',
-            children: [
-              {
-                key: 701,
-                name: 'Jo Snider',
-                age: 22,
-                address: 'London No. 2 Lake Park',
-                children: [
-                  {
-                    key: 702,
-                    name: 'Jaems Snider jr.',
-                    age: 24,
-                    address: 'London No. 1 Lake Park',
-                  },
-                  {
-                    key: 703,
-                    name: 'Jin Snider sr.',
-                    age: 19,
-                    address: 'London No. 4 Lake Park',
-                  },
-                ],
-              },
-            ],
-          },
-          {
-            key: 800,
-            name: 'Jon Brown',
-            age: 26,
-            address: 'London No. 2 Lake Park',
-            children: [
-              {
-                key: 801,
-                name: 'Kitana Brown',
-                age: 22,
-                address: 'London No. 2 Lake Park',
-                children: [
-                  {
-                    key: 802,
-                    name: 'Cris Brown jr.',
-                    age: 24,
-                    address: 'London No. 1 Lake Park',
-                  },
-                  {
-                    key: 803,
-                    name: 'Jon Brown sr.',
-                    age: 19,
-                    address: 'London No. 4 Lake Park',
-                  },
-                ],
-              },
-            ],
-          },
+          // {
+          //   key: 1,
+          //   name: 'John Brown sr.',
+          //   age: 60,
+          //   status: 'New York No. 1 Lake Park',
+          //   children: [
+          //     {
+          //       key: 11,
+          //       name: 'John Brown',
+          //       age: 42,
+          //       status: 'New York No. 2 Lake Park',
+          //     },
+          //     {
+          //       key: 12,
+          //       name: 'John Brown jr.',
+          //       age: 30,
+          //       status: 'New York No. 3 Lake Park',
+          //       children: [
+          //         {
+          //           key: 121,
+          //           name: 'Jimmy Brown',
+          //           age: 16,
+          //           status: 'New York No. 3 Lake Park',
+          //         },
+          //       ],
+          //     },
+          //     {
+          //       key: 13,
+          //       name: 'Jim Green sr.',
+          //       age: 72,
+          //       status: 'London No. 1 Lake Park',
+          //       children: [
+          //         {
+          //           key: 131,
+          //           name: 'Jim Green',
+          //           age: 42,
+          //           status: 'London No. 2 Lake Park',
+          //           children: [
+          //             {
+          //               key: 1311,
+          //               name: 'Jim Green jr.',
+          //               age: 25,
+          //               status: 'London No. 3 Lake Park',
+          //             },
+          //             {
+          //               key: 1312,
+          //               name: 'Jimmy Green sr.',
+          //               age: 18,
+          //               status: 'London No. 4 Lake Park',
+          //             },
+          //           ],
+          //         },
+          //       ],
+          //     },
+          //   ],
+          // },
+          // {
+          //   key: 200,
+          //   name: 'Joe Black',
+          //   age: 32,
+          //   status: 'Sidney No. 1 Lake Park',
+          //   children: [
+          //     {
+          //       key: 201,
+          //       name: 'Joe Green',
+          //       age: 42,
+          //       status: 'London No. 2 Lake Park',
+          //       children: [
+          //         {
+          //           key: 202,
+          //           name: 'Joe Green jr.',
+          //           age: 25,
+          //           status: 'London No. 3 Lake Park',
+          //         },
+          //         {
+          //           key: 203,
+          //           name: 'Joe Green sr.',
+          //           age: 18,
+          //           status: 'London No. 4 Lake Park',
+          //         },
+          //       ],
+          //     },
+          //   ],
+          // },
+          // {
+          //   key: 300,
+          //   name: 'Jaime Black',
+          //   age: 22,
+          //   status: 'Sidney No. 1 Lake Park',
+          //   children: [
+          //     {
+          //       key: 301,
+          //       name: 'Jaime Green',
+          //       age: 52,
+          //       status: 'London No. 2 Lake Park',
+          //       children: [
+          //         {
+          //           key: 302,
+          //           name: 'Jaime Green jr.',
+          //           age: 21,
+          //           status: 'London No. 3 Lake Park',
+          //         },
+          //         {
+          //           key: 303,
+          //           name: 'Jaime Green sr.',
+          //           age: 18,
+          //           status: 'London No. 4 Lake Park',
+          //         },
+          //       ],
+          //     },
+          //   ],
+          // },
+          // {
+          //   key: 400,
+          //   name: 'Pavel Brown',
+          //   age: 26,
+          //   status: 'London No. 2 Lake Park',
+          //   children: [
+          //     {
+          //       key: 401,
+          //       name: 'Pavel Brown',
+          //       age: 22,
+          //       status: 'London No. 2 Lake Park',
+          //       children: [
+          //         {
+          //           key: 402,
+          //           name: 'Pavel Brown jr.',
+          //           age: 24,
+          //           status: 'London No. 1 Lake Park',
+          //         },
+          //         {
+          //           key: 403,
+          //           name: 'Pavel Brown sr.',
+          //           age: 19,
+          //           status: 'London No. 4 Lake Park',
+          //         },
+          //       ],
+          //     },
+          //   ],
+          // },
+          // {
+          //   key: 500,
+          //   name: 'Alex Nickls',
+          //   age: 45,
+          //   status: 'London No. 2 Lake Park',
+          //   children: [
+          //     {
+          //       key: 501,
+          //       name: 'Marta Nickls',
+          //       age: 25,
+          //       status: 'London No. 2 Lake Park',
+          //       children: [
+          //         {
+          //           key: 502,
+          //           name: 'Pavel Nickls jr.',
+          //           age: 12,
+          //           status: 'London No. 1 Lake Park',
+          //         },
+          //         {
+          //           key: 503,
+          //           name: 'Alina Nickls sr.',
+          //           age: 19,
+          //           status: 'London No. 4 Lake Park',
+          //         },
+          //       ],
+          //     },
+          //   ],
+          // },
+          // {
+          //   key: 600,
+          //   name: 'Nick Donald',
+          //   age: 45,
+          //   status: 'London No. 2 Lake Park',
+          //   children: [
+          //     {
+          //       key: 601,
+          //       name: 'Alexsa Donald',
+          //       age: 34,
+          //       status: 'London No. 2 Lake Park',
+          //       children: [
+          //         {
+          //           key: 602,
+          //           name: 'Marta Donald jr.',
+          //           age: 24,
+          //           status: 'London No. 1 Lake Park',
+          //         },
+          //         {
+          //           key: 603,
+          //           name: 'Alex Donald sr.',
+          //           age: 19,
+          //           status: 'London No. 4 Lake Park',
+          //         },
+          //       ],
+          //     },
+          //   ],
+          // },
+          // {
+          //   key: 700,
+          //   name: 'Jo Snider',
+          //   age: 26,
+          //   status: 'London No. 2 Lake Park',
+          //   children: [
+          //     {
+          //       key: 701,
+          //       name: 'Jo Snider',
+          //       age: 22,
+          //       status: 'London No. 2 Lake Park',
+          //       children: [
+          //         {
+          //           key: 702,
+          //           name: 'Jaems Snider jr.',
+          //           age: 24,
+          //           status: 'London No. 1 Lake Park',
+          //         },
+          //         {
+          //           key: 703,
+          //           name: 'Jin Snider sr.',
+          //           age: 19,
+          //           status: 'London No. 4 Lake Park',
+          //         },
+          //       ],
+          //     },
+          //   ],
+          // },
+          // {
+          //   key: 800,
+          //   name: 'Jon Brown',
+          //   age: 26,
+          //   status: 'London No. 2 Lake Park',
+          //   children: [
+          //     {
+          //       key: 801,
+          //       name: 'Kitana Brown',
+          //       age: 22,
+          //       status: 'London No. 2 Lake Park',
+          //       children: [
+          //         {
+          //           key: 802,
+          //           name: 'Cris Brown jr.',
+          //           age: 24,
+          //           status: 'London No. 1 Lake Park',
+          //         },
+          //         {
+          //           key: 803,
+          //           name: 'Jon Brown sr.',
+          //           age: 19,
+          //           status: 'London No. 4 Lake Park',
+          //         },
+          //       ],
+          //     },
+          //   ],
+          // },
         ],
         pagination: { ...pagination, total: 8 },
       });
@@ -486,102 +476,102 @@ export const getEditableTableData = (pagination: Pagination): Promise<EditableTa
     setTimeout(() => {
       res({
         data: [
-          {
-            key: 1,
-            name: `Edward`,
-            age: 32,
-            address: `London Park no.1`,
-          },
-          {
-            key: 2,
-            name: `Alex`,
-            age: 45,
-            address: `London Park no.2`,
-          },
-          {
-            key: 3,
-            name: `Niko`,
-            age: 21,
-            address: `London Park no.3`,
-          },
-          {
-            key: 4,
-            name: `Josh`,
-            age: 18,
-            address: `London Park no.4`,
-          },
-          {
-            key: 5,
-            name: `Jo`,
-            age: 15,
-            address: `Minsk Park no.1`,
-          },
-          {
-            key: 6,
-            name: `Jaimi`,
-            age: 18,
-            address: `London Park no.2`,
-          },
-          {
-            key: 7,
-            name: `Alexa`,
-            age: 24,
-            address: `London Park no.6`,
-          },
-          {
-            key: 8,
-            name: `Donald`,
-            age: 27,
-            address: `London Park no.7`,
-          },
-          {
-            key: 9,
-            name: `Pavel`,
-            age: 17,
-            address: `London Park no.9`,
-          },
-          {
-            key: 10,
-            name: `Nick`,
-            age: 18,
-            address: `London Park no.1`,
-          },
-          {
-            key: 11,
-            name: `Dasha`,
-            age: 25,
-            address: `London Park no.2`,
-          },
-          {
-            key: 12,
-            name: `Alex`,
-            age: 27,
-            address: `London Park no.3`,
-          },
-          {
-            key: 13,
-            name: `Vic`,
-            age: 29,
-            address: `London Park no.2`,
-          },
-          {
-            key: 14,
-            name: `Natalia`,
-            age: 25,
-            address: `London Park no.4`,
-          },
-          {
-            key: 15,
-            name: `Zack`,
-            age: 27,
-            address: `London Park no.1`,
-          },
-          {
-            key: 16,
-            name: `Jack`,
-            age: 31,
-            address: `London Park no.4`,
-          },
+          // {
+          //   key: 1,
+          //   name: `Edward`,
+          //   age: 32,
+          //   status: `London Park no.1`,
+          // },
+          // {
+          //   key: 2,
+          //   name: `Alex`,
+          //   age: 45,
+          //   status: `London Park no.2`,
+          // },
+          // {
+          //   key: 3,
+          //   name: `Niko`,
+          //   age: 21,
+          //   status: `London Park no.3`,
+          // },
+          // {
+          //   key: 4,
+          //   name: `Josh`,
+          //   age: 18,
+          //   status: `London Park no.4`,
+          // },
+          // {
+          //   key: 5,
+          //   name: `Jo`,
+          //   age: 15,
+          //   status: `Minsk Park no.1`,
+          // },
+          // {
+          //   key: 6,
+          //   name: `Jaimi`,
+          //   age: 18,
+          //   status: `London Park no.2`,
+          // },
+          // {
+          //   key: 7,
+          //   name: `Alexa`,
+          //   age: 24,
+          //   status: `London Park no.6`,
+          // },
+          // {
+          //   key: 8,
+          //   name: `Donald`,
+          //   age: 27,
+          //   status: `London Park no.7`,
+          // },
+          // {
+          //   key: 9,
+          //   name: `Pavel`,
+          //   age: 17,
+          //   status: `London Park no.9`,
+          // },
+          // {
+          //   key: 10,
+          //   name: `Nick`,
+          //   age: 18,
+          //   status: `London Park no.1`,
+          // },
+          // {
+          //   key: 11,
+          //   name: `Dasha`,
+          //   age: 25,
+          //   status: `London Park no.2`,
+          // },
+          // {
+          //   key: 12,
+          //   name: `Alex`,
+          //   age: 27,
+          //   status: `London Park no.3`,
+          // },
+          // {
+          //   key: 13,
+          //   name: `Vic`,
+          //   age: 29,
+          //   status: `London Park no.2`,
+          // },
+          // {
+          //   key: 14,
+          //   name: `Natalia`,
+          //   age: 25,
+          //   status: `London Park no.4`,
+          // },
+          // {
+          //   key: 15,
+          //   name: `Zack`,
+          //   age: 27,
+          //   status: `London Park no.1`,
+          // },
+          // {
+          //   key: 16,
+          //   name: `Jack`,
+          //   age: 31,
+          //   status: `London Park no.4`,
+          // },
         ],
         pagination: { ...pagination, total: 16 },
       });

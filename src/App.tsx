@@ -29,10 +29,10 @@ const App: React.FC = () => {
   useThemeWatcher();
   useEffect(() => {
     socketRef.current = socketIOClient(host);
-    socketRef.current.on('connect', () => {
-      console.log('connected to server');
-    });
     if (socketRef.current) {
+      socketRef.current.on('connect', () => {
+        console.log('connected to server');
+      });
       socketRef.current.on('confirm_request', (data) => {
         console.log(data);
         notification.success({ message: `Yêu cầu đặt xe đã được phê duyệt!` });
